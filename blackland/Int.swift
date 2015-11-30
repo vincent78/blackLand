@@ -13,6 +13,35 @@ import Foundation
 public extension Int
 {
     /**
+     Calls function self times.
+     
+     :param: function Function to call
+     */
+    func times <T> (function: Void -> T) {
+        (0..<self).each { _ in function(); return }
+    }
+    
+    /**
+     Calls function self times.
+     
+     :param: function Function to call
+     */
+    func times (function: Void -> Void) {
+        (0..<self).each { _ in function(); return }
+    }
+    
+    /**
+     Calls function self times passing a value from 0 to self on each call.
+     
+     :param: function Function to call
+     */
+    func times <T> (function: (Int) -> T) {
+        (0..<self).each { index in function(index); return }
+    }
+    
+    
+    
+    /**
      Checks if a number is even.
      
      :returns: true if self is even

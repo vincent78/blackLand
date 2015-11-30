@@ -51,5 +51,9 @@ class StringTests: XCTestCase {
         XCTAssertEqual(tmp.reverse(), " elpmas tset si siht ")
     }
     
+    func testToDateTime() {
+        print("2015-11-30 15:30:50".toDate("yyyy-MM-dd HH:mm:ss"))
+    }
+    
     
 }

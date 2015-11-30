@@ -13,6 +13,7 @@
 		BF2DCC261C0BF73A0058D888 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DCC251C0BF73A0058D888 /* String.swift */; };
 		BF2DCC281C0BF74D0058D888 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DCC271C0BF74D0058D888 /* Int.swift */; };
 		BF2DCC2B1C0BFA730058D888 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DCC2A1C0BFA730058D888 /* StringTests.swift */; };
+		BFF21F9F1C0C370C00049519 /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF21F9E1C0C370C00049519 /* Range.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		BF2DCC251C0BF73A0058D888 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		BF2DCC271C0BF74D0058D888 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		BF2DCC2A1C0BFA730058D888 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		BFF21F9E1C0C370C00049519 /* Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				BF2DCC101C0BF7190058D888 /* Info.plist */,
 				BF2DCC251C0BF73A0058D888 /* String.swift */,
 				BF2DCC271C0BF74D0058D888 /* Int.swift */,
+				BFF21F9E1C0C370C00049519 /* Range.swift */,
 			);
 			path = blackland;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF21F9F1C0C370C00049519 /* Range.swift in Sources */,
 				BF2DCC261C0BF73A0058D888 /* String.swift in Sources */,
 				BF2DCC281C0BF74D0058D888 /* Int.swift in Sources */,
 			);
