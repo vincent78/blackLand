@@ -8,14 +8,14 @@
 
 import Foundation
 
-internal extension Range {
+public extension Range {
     
     /**
      For each element in the range invokes function.
      
      :param: function Function to call
      */
-    func times (function: () -> ()) {
+    public func times (function: () -> ()) {
         each { (current: Element) -> () in
             function()
         }
@@ -26,7 +26,7 @@ internal extension Range {
      
      :param: function Function to invoke
      */
-    func times (function: (Element) -> ()) {
+    public func times (function: (Element) -> ()) {
         each (function)
     }
     
@@ -35,7 +35,7 @@ internal extension Range {
      
      :param: function Function to invoke
      */
-    func each (function: (Element) -> ()) {
+    public func each (function: (Element) -> ()) {
         for i in self {
             function(i)
         }
@@ -46,7 +46,7 @@ internal extension Range {
      
      :returns: Each element of the range in an array
      */
-    func toArray () -> [Element] {
+    public func toArray () -> [Element] {
         var result: [Element] = []
         for i in self {
             result.append(i)
@@ -61,7 +61,7 @@ internal extension Range {
      :param: to Upper bound
      :returns: Random range
      */
-    static func random (from: Int, to: Int) -> Range<Int> {
+    public static func random (from: Int, to: Int) -> Range<Int> {
         let lowerBound = Int.random(from, max: to)
         let upperBound = Int.random(lowerBound, max: to)
         

@@ -14,6 +14,10 @@
 		BF2DCC281C0BF74D0058D888 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DCC271C0BF74D0058D888 /* Int.swift */; };
 		BF2DCC2B1C0BFA730058D888 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DCC2A1C0BFA730058D888 /* StringTests.swift */; };
 		BFF21F9F1C0C370C00049519 /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF21F9E1C0C370C00049519 /* Range.swift */; };
+		BFF21FA31C0C43B400049519 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF21FA21C0C43B400049519 /* NSDate.swift */; };
+		BFF21FA51C0C4A6F00049519 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF21FA41C0C4A6F00049519 /* Float.swift */; };
+		BFF21FA71C0C4A8A00049519 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF21FA61C0C4A8A00049519 /* Double.swift */; };
+		BFF21FA91C0C4DEB00049519 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF21FA81C0C4DEB00049519 /* Dictionary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,10 @@
 		BF2DCC271C0BF74D0058D888 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		BF2DCC2A1C0BFA730058D888 /* StringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		BFF21F9E1C0C370C00049519 /* Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
+		BFF21FA21C0C43B400049519 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		BFF21FA41C0C4A6F00049519 /* Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
+		BFF21FA61C0C4A8A00049519 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		BFF21FA81C0C4DEB00049519 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,10 @@
 				BF2DCC251C0BF73A0058D888 /* String.swift */,
 				BF2DCC271C0BF74D0058D888 /* Int.swift */,
 				BFF21F9E1C0C370C00049519 /* Range.swift */,
+				BFF21FA21C0C43B400049519 /* NSDate.swift */,
+				BFF21FA41C0C4A6F00049519 /* Float.swift */,
+				BFF21FA61C0C4A8A00049519 /* Double.swift */,
+				BFF21FA81C0C4DEB00049519 /* Dictionary.swift */,
 			);
 			path = blackland;
 			sourceTree = "<group>";
@@ -232,7 +244,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF21F9F1C0C370C00049519 /* Range.swift in Sources */,
+				BFF21FA51C0C4A6F00049519 /* Float.swift in Sources */,
 				BF2DCC261C0BF73A0058D888 /* String.swift in Sources */,
+				BFF21FA31C0C43B400049519 /* NSDate.swift in Sources */,
+				BFF21FA91C0C4DEB00049519 /* Dictionary.swift in Sources */,
+				BFF21FA71C0C4A8A00049519 /* Double.swift in Sources */,
 				BF2DCC281C0BF74D0058D888 /* Int.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
