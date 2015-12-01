@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF0004201C0D785F00E75D78 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00041F1C0D785F00E75D78 /* ArrayTests.swift */; };
 		BF0004221C0D802E00E75D78 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0004211C0D802E00E75D78 /* Sequence.swift */; };
+		BF0004241C0DB01600E75D78 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0004231C0DB01600E75D78 /* DictionaryTests.swift */; };
 		BF2DCC0F1C0BF7190058D888 /* blackland.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2DCC0E1C0BF7190058D888 /* blackland.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF2DCC161C0BF71A0058D888 /* blackland.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2DCC0B1C0BF7190058D888 /* blackland.framework */; };
 		BF2DCC1B1C0BF71A0058D888 /* blacklandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DCC1A1C0BF71A0058D888 /* blacklandTests.swift */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		BF00041F1C0D785F00E75D78 /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		BF0004211C0D802E00E75D78 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
+		BF0004231C0DB01600E75D78 /* DictionaryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryTests.swift; sourceTree = "<group>"; };
 		BF2DCC0B1C0BF7190058D888 /* blackland.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = blackland.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2DCC0E1C0BF7190058D888 /* blackland.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blackland.h; sourceTree = "<group>"; };
 		BF2DCC101C0BF7190058D888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				BF2DCC1C1C0BF71A0058D888 /* Info.plist */,
 				BF2DCC2A1C0BFA730058D888 /* StringTests.swift */,
 				BF00041F1C0D785F00E75D78 /* ArrayTests.swift */,
+				BF0004231C0DB01600E75D78 /* DictionaryTests.swift */,
 			);
 			path = blacklandTests;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF0004201C0D785F00E75D78 /* ArrayTests.swift in Sources */,
+				BF0004241C0DB01600E75D78 /* DictionaryTests.swift in Sources */,
 				BF2DCC2B1C0BFA730058D888 /* StringTests.swift in Sources */,
 				BF2DCC1B1C0BF71A0058D888 /* blacklandTests.swift in Sources */,
 			);

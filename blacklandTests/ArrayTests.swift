@@ -208,6 +208,9 @@ class ArrayTests: XCTestCase {
         
     }
     
- 
+    func testToStr() {
+        let arr:Array<AnyObject> = [["id":1,"name":"test1"],["id":2,"name":"test2"]]
+        XCTAssertEqual(arr.toJSONStr(), "[{\"id\":1,\"name\":\"test1\"},{\"id\":2,\"name\":\"test2\"}]")
+    }
 
 }

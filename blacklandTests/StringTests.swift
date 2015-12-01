@@ -55,5 +55,15 @@ class StringTests: XCTestCase {
         print("2015-11-30 15:30:50".toDate("yyyy-MM-dd HH:mm:ss"))
     }
     
+    func testJson() {
+        let retDic:Dictionary<String,NSObject>? = ["id":1,"name":"test1"]
+        let json1 = "{\"id\":1,\"name\":\"test1\"}"
+        XCTAssertEqual(json1.toDic()!, retDic!)
+        
+//        let retArray:Array<AnyObject>? = [["id":1,"name":"test1"],["id":2,"name":"test2"]]
+//        let json2 = "[{\"id\":1,\"name\":\"test1\"},{\"id\":2,\"name\":\"test2\"}]"
+//        print("\(json2.toArray())")
+    }
+    
     
 }

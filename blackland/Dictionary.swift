@@ -391,6 +391,24 @@ public extension Dictionary {
     
 }
 
+// MARK: - JSON
+public extension Dictionary {
+    
+    /**
+     转换成JSON字符串
+     
+     - returns: <#return value description#>
+     */
+    public func toJSONStr() -> String? {
+        do {
+            return String(data: try NSJSONSerialization.dataWithJSONObject(self as! AnyObject, options: NSJSONWritingOptions(rawValue:0)), encoding: NSUTF8StringEncoding)
+        } catch {
+            return nil
+        }
+    }
+}
+
+
 /**
  Difference operator
  */

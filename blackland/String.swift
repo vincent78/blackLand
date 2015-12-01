@@ -280,6 +280,47 @@ public extension String
     public func toDateTime(format : String? = "yyyy-MM-dd hh-mm-ss") -> NSDate? {
         return toDate(format)
     }
+    
+    
+    /**
+     As its name hints
+     
+     - returns: <#return value description#>
+     */
+    public func toData() -> NSData {
+        return self.dataUsingEncoding(NSUTF8StringEncoding)!
+    }
+    
+    /**
+     转成JSON的对象
+     
+     - returns: <#return value description#>
+     */
+    public func toJsonObj() -> AnyObject? {
+        var jsonData: AnyObject? = nil
+        do {
+            jsonData = try NSJSONSerialization.JSONObjectWithData(self.toData(), options: [])
+        } catch  {
+            //ERROR处理
+        }
+        return jsonData
+    }
+    
+    public func toDic() -> Dictionary<String,NSObject>? {
+        if let dic = self.toJsonObj() as? Dictionary<String,NSObject> {
+            return dic
+        } else {
+            return nil
+        }
+    }
+    
+    public func toArray() -> Array<AnyObject>? {
+        if let array = self.toJsonObj() as? Array<AnyObject> {
+            return array
+        } else {
+            return nil
+        }
+    }
 
 
 }

@@ -1058,37 +1058,7 @@ public extension Array {
         return indexes.map { self.get($0)! }
     }
     
-    /**
-     Converts the array to a dictionary with the keys supplied via the keySelector.
-     
-     :param: keySelector
-     :returns: A dictionary
-     */
-    public func toDictionary <U> (keySelector:(Element) -> U) -> [U: Element] {
-        var result: [U: Element] = [:]
-        for item in self {
-            result[keySelector(item)] = item
-        }
-        
-        return result
-    }
-    
-    /**
-     Converts the array to a dictionary with keys and values supplied via the transform function.
-     
-     :param: transform
-     :returns: A dictionary
-     */
-    public func toDictionary <K, V> (transform: (Element) -> (key: K, value: V)?) -> [K: V] {
-        var result: [K: V] = [:]
-        for item in self {
-            if let entry = transform(item) {
-                result[entry.key] = entry.value
-            }
-        }
-        
-        return result
-    }
+
     
 //    /**
 //     Flattens a nested Array self to an array of OutType objects.
@@ -1343,6 +1313,57 @@ public extension Array {
     }
     
 }
+
+
+public extension Array {
+    /**
+     Converts the array to a dictionary with the keys supplied via the keySelector.
+     
+     :param: keySelector
+     :returns: A dictionary
+     */
+    public func toDictionary <U> (keySelector:(Element) -> U) -> [U: Element] {
+        var result: [U: Element] = [:]
+        for item in self {
+            result[keySelector(item)] = item
+        }
+        
+        return result
+    }
+    
+    /**
+     Converts the array to a dictionary with keys and values supplied via the transform function.
+     
+     :param: transform
+     :returns: A dictionary
+     */
+    public func toDictionary <K, V> (transform: (Element) -> (key: K, value: V)?) -> [K: V] {
+        var result: [K: V] = [:]
+        for item in self {
+            if let entry = transform(item) {
+                result[entry.key] = entry.value
+            }
+        }
+        
+        return result
+    }
+    
+    
+    /**
+     转换成JSON字符串
+     
+     - returns: <#return value description#>
+     */
+    public func toJSONStr() -> String? {
+        do {
+            return String(data: try NSJSONSerialization.dataWithJSONObject(self as! AnyObject, options: NSJSONWritingOptions(rawValue:0)), encoding: NSUTF8StringEncoding)
+        } catch {
+            return nil
+        }
+    }
+}
+
+
 
 /**
  Remove an element from the array
