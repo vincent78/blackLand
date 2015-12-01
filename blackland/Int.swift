@@ -59,6 +59,35 @@ public extension Int
         return !isEven()
     }
     
+    /**
+     Iterates function, passing in integer values from self up to and including limit.
+     
+     :param: limit Last value to pass
+     :param: function Function to invoke
+     */
+    func upTo (limit: Int, function: (Int) -> ()) {
+        if limit < self {
+            return
+        }
+        
+        (self...limit).each(function)
+    }
+    
+    /**
+     Iterates function, passing in integer values from self down to and including limit.
+     
+     :param: limit Last value to pass
+     :param: function Function to invoke
+     */
+    func downTo (limit: Int, function: (Int) -> ()) {
+        if limit > self {
+            return
+        }
+        
+        Array(limit...self).reverse().each(function)
+    }
+
+    
     
     /**
      Absolute value.

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0004201C0D785F00E75D78 /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF00041F1C0D785F00E75D78 /* ArrayTests.swift */; };
+		BF0004221C0D802E00E75D78 /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0004211C0D802E00E75D78 /* Sequence.swift */; };
 		BF2DCC0F1C0BF7190058D888 /* blackland.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2DCC0E1C0BF7190058D888 /* blackland.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF2DCC161C0BF71A0058D888 /* blackland.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2DCC0B1C0BF7190058D888 /* blackland.framework */; };
 		BF2DCC1B1C0BF71A0058D888 /* blacklandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DCC1A1C0BF71A0058D888 /* blacklandTests.swift */; };
@@ -18,6 +20,7 @@
 		BFF21FA51C0C4A6F00049519 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF21FA41C0C4A6F00049519 /* Float.swift */; };
 		BFF21FA71C0C4A8A00049519 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF21FA61C0C4A8A00049519 /* Double.swift */; };
 		BFF21FA91C0C4DEB00049519 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF21FA81C0C4DEB00049519 /* Dictionary.swift */; };
+		BFF21FAB1C0C516C00049519 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF21FAA1C0C516C00049519 /* Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF00041F1C0D785F00E75D78 /* ArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
+		BF0004211C0D802E00E75D78 /* Sequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequence.swift; sourceTree = "<group>"; };
 		BF2DCC0B1C0BF7190058D888 /* blackland.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = blackland.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2DCC0E1C0BF7190058D888 /* blackland.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blackland.h; sourceTree = "<group>"; };
 		BF2DCC101C0BF7190058D888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +50,7 @@
 		BFF21FA41C0C4A6F00049519 /* Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
 		BFF21FA61C0C4A8A00049519 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		BFF21FA81C0C4DEB00049519 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		BFF21FAA1C0C516C00049519 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,8 @@
 				BFF21FA41C0C4A6F00049519 /* Float.swift */,
 				BFF21FA61C0C4A8A00049519 /* Double.swift */,
 				BFF21FA81C0C4DEB00049519 /* Dictionary.swift */,
+				BFF21FAA1C0C516C00049519 /* Array.swift */,
+				BF0004211C0D802E00E75D78 /* Sequence.swift */,
 			);
 			path = blackland;
 			sourceTree = "<group>";
@@ -107,6 +115,7 @@
 				BF2DCC1A1C0BF71A0058D888 /* blacklandTests.swift */,
 				BF2DCC1C1C0BF71A0058D888 /* Info.plist */,
 				BF2DCC2A1C0BFA730058D888 /* StringTests.swift */,
+				BF00041F1C0D785F00E75D78 /* ArrayTests.swift */,
 			);
 			path = blacklandTests;
 			sourceTree = "<group>";
@@ -245,9 +254,11 @@
 			files = (
 				BFF21F9F1C0C370C00049519 /* Range.swift in Sources */,
 				BFF21FA51C0C4A6F00049519 /* Float.swift in Sources */,
+				BF0004221C0D802E00E75D78 /* Sequence.swift in Sources */,
 				BF2DCC261C0BF73A0058D888 /* String.swift in Sources */,
 				BFF21FA31C0C43B400049519 /* NSDate.swift in Sources */,
 				BFF21FA91C0C4DEB00049519 /* Dictionary.swift in Sources */,
+				BFF21FAB1C0C516C00049519 /* Array.swift in Sources */,
 				BFF21FA71C0C4A8A00049519 /* Double.swift in Sources */,
 				BF2DCC281C0BF74D0058D888 /* Int.swift in Sources */,
 			);
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0004201C0D785F00E75D78 /* ArrayTests.swift in Sources */,
 				BF2DCC2B1C0BFA730058D888 /* StringTests.swift in Sources */,
 				BF2DCC1B1C0BF71A0058D888 /* blacklandTests.swift in Sources */,
 			);
