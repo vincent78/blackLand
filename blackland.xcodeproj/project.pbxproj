@@ -12,7 +12,6 @@
 		BF0004241C0DB01600E75D78 /* DictionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0004231C0DB01600E75D78 /* DictionaryTests.swift */; };
 		BF2DCC0F1C0BF7190058D888 /* blackland.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2DCC0E1C0BF7190058D888 /* blackland.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BF2DCC161C0BF71A0058D888 /* blackland.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2DCC0B1C0BF7190058D888 /* blackland.framework */; };
-		BF2DCC1B1C0BF71A0058D888 /* blacklandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DCC1A1C0BF71A0058D888 /* blacklandTests.swift */; };
 		BF2DCC261C0BF73A0058D888 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DCC251C0BF73A0058D888 /* String.swift */; };
 		BF2DCC281C0BF74D0058D888 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DCC271C0BF74D0058D888 /* Int.swift */; };
 		BF2DCC2B1C0BFA730058D888 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2DCC2A1C0BFA730058D888 /* StringTests.swift */; };
@@ -42,7 +41,6 @@
 		BF2DCC0E1C0BF7190058D888 /* blackland.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blackland.h; sourceTree = "<group>"; };
 		BF2DCC101C0BF7190058D888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2DCC151C0BF71A0058D888 /* blacklandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blacklandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF2DCC1A1C0BF71A0058D888 /* blacklandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = blacklandTests.swift; path = blacklandTests/blacklandTests.swift; sourceTree = SOURCE_ROOT; };
 		BF2DCC1C1C0BF71A0058D888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF2DCC251C0BF73A0058D888 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		BF2DCC271C0BF74D0058D888 /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 		BF2DCC191C0BF71A0058D888 /* blacklandTests */ = {
 			isa = PBXGroup;
 			children = (
-				BF2DCC1A1C0BF71A0058D888 /* blacklandTests.swift */,
 				BF2DCC1C1C0BF71A0058D888 /* Info.plist */,
 				BF2DCC2A1C0BFA730058D888 /* StringTests.swift */,
 				BF00041F1C0D785F00E75D78 /* ArrayTests.swift */,
@@ -274,7 +271,6 @@
 				BF0004201C0D785F00E75D78 /* ArrayTests.swift in Sources */,
 				BF0004241C0DB01600E75D78 /* DictionaryTests.swift in Sources */,
 				BF2DCC2B1C0BFA730058D888 /* StringTests.swift in Sources */,
-				BF2DCC1B1C0BF71A0058D888 /* blacklandTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
