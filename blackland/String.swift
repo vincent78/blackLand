@@ -305,7 +305,11 @@ public extension String
         }
         return jsonData
     }
-    
+    /**
+     将JSON字符串转成Dictionary
+     
+     - returns: <#return value description#>
+     */
     public func toDic() -> Dictionary<String,NSObject>? {
         if let dic = self.toJsonObj() as? Dictionary<String,NSObject> {
             return dic
@@ -314,6 +318,11 @@ public extension String
         }
     }
     
+    /**
+     将JSON字符串转成数组
+     
+     - returns: <#return value description#>
+     */
     public func toArray() -> Array<AnyObject>? {
         if let array = self.toJsonObj() as? Array<AnyObject> {
             return array
