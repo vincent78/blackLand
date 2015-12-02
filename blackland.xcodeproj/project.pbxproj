@@ -75,7 +75,6 @@
 		BF2DCC011C0BF7190058D888 = {
 			isa = PBXGroup;
 			children = (
-				BF2DCC291C0BF89B0058D888 /* Script */,
 				BF2DCC0D1C0BF7190058D888 /* blackland */,
 				BF2DCC191C0BF71A0058D888 /* blacklandTests */,
 				BF2DCC0C1C0BF7190058D888 /* Products */,
@@ -118,13 +117,6 @@
 				BF0004231C0DB01600E75D78 /* DictionaryTests.swift */,
 			);
 			path = blacklandTests;
-			sourceTree = "<group>";
-		};
-		BF2DCC291C0BF89B0058D888 /* Script */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Script;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +236,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n#buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\n#buildNumber=$(($buildNumber + 1))\n#/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\nScript/auto_increase_version.sh\n";
+			shellScript = "#!/bin/bash\n#版本自动增加\nScript/auto_increase_version.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
