@@ -149,7 +149,7 @@
 				BF2DCC071C0BF7190058D888 /* Frameworks */,
 				BF2DCC081C0BF7190058D888 /* Headers */,
 				BF2DCC091C0BF7190058D888 /* Resources */,
-				BF2DCC4A1C0C21360058D888 /* ShellScript */,
+				BF2DCC4A1C0C21360058D888 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -232,18 +232,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BF2DCC4A1C0C21360058D888 /* ShellScript */ = {
+		BF2DCC4A1C0C21360058D888 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n#buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\n#buildNumber=$((${buildNumber} + 1))\n#/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+			shellScript = "#!/bin/bash\n#buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\n#buildNumber=$(($buildNumber + 1))\n#/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\nScript/auto_increase_version.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
