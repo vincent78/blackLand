@@ -236,7 +236,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n#版本自动增加\nScript/auto_increase_version.sh\n";
+			shellScript = "#!/bin/bash\n#版本自动增加\n#Script/auto_increase_version.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
