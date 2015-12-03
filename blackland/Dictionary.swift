@@ -188,10 +188,11 @@ public extension Dictionary {
         
         var mapped = [K: V]()
         
-        self.each({
+        each({
             let (_key, _value) = map($0, $1)
             mapped[_key] = _value
         })
+        
         
         return mapped
         
@@ -221,7 +222,7 @@ public extension Dictionary {
         
         var result = Dictionary()
         
-        for (key, value) in self {
+        each { (key, value) -> () in
             if test(key, value) {
                 result[key] = value
             }
@@ -401,7 +402,8 @@ public extension Dictionary {
      */
     public func toJSONStr() -> String? {
         do {
-            return String(data: try NSJSONSerialization.dataWithJSONObject(self as! AnyObject, options: NSJSONWritingOptions(rawValue:0)), encoding: NSUTF8StringEncoding)
+            let jsonData = try NSJSONSerialization.dataWithJSONObject(self as! AnyObject, options: NSJSONWritingOptions(rawValue:0))
+            return String(data: jsonData, encoding: NSUTF8StringEncoding)
         } catch {
             return nil
         }

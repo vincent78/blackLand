@@ -36,5 +36,7 @@ class DictionaryTests: XCTestCase {
         let dic = ["id":1,"name":"test1"]
         XCTAssertEqual(dic.toJSONStr(), "{\"id\":1,\"name\":\"test1\"}")
     }
+    
+    
 
 }
